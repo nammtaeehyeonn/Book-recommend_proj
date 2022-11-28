@@ -27,7 +27,7 @@ def Recommend(title, cos_sim):
 df = pd.read_csv('book.csv')
 cos_sim = np.load('sim.npy')
 
-############################################ streamlit
+# streamlit
 st.title('독서는 마음의 양식')
 
 title = st.text_input("책 제목을 입력해주세요")
