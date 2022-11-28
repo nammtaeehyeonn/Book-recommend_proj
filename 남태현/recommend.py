@@ -2,9 +2,6 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 
-
-
-
 def Recommend(title, cos_sim):
     
     title_idx = dict(zip(df['Title'], df.index))
@@ -25,36 +22,25 @@ def Recommend(title, cos_sim):
 
     # 유사도 탑10 제목 가져오기
     # print(sim)                       # (인덱스, 유사도)
-    return df['image'].iloc[rec_idx]
+    return df.iloc[rec_idx]
 
 df = pd.read_csv('book.csv')
 cos_sim = np.load('sim.npy')
 
-###########################################
-# ui
-###########################################
-# st.title('book')
+############################################ streamlit
+st.title('독서는 마음의 양식')
 
-# title = st.text_input("책 제목을 입력해주세요")
+title = st.text_input("책 제목을 입력해주세요")
 
-
-
-
-# title = df.loc[df['Title'].str.contains(title), 'Title']
-# print(title)
-
-ans = Recommend('Dramatica for Screenwriters', cos_sim)
-ans.reset_index(drop = True, inplace = True)
-
-# print(ans)
-
-
-for url in ans:
-    # response = requests.get(df1.loc[a.index[i]].image)
-    # img = Image.open(BytesIO(response.content))
-    st.image(url, wigth = 100)
-
-    # fig.add_subplot(2, 5, i + 1)
-    # plt.imshow(img)
-    # plt.axis('off')
-    # plt.title(df1.loc[a.index[i]]['Title'])
+if title:
+    ans = Recommend(title, cos_sim)
+    ans.reset_index(drop = True, inplace = True)
+     
+    for i in range(5):
+        st.subheader(ans.Title[i])
+        col1, col2 = st.columns(2)
+        with col1:
+            st.image(ans.image[i], width = 200)
+        with col2:
+            st.write(ans.description[i][:400] + "   ...")
+        st.header("")
