@@ -1,5 +1,8 @@
+import streamlit as st
 import numpy as np
 import pandas as pd
+
+
 
 
 def Recommend(title, cos_sim):
@@ -27,10 +30,31 @@ def Recommend(title, cos_sim):
 df = pd.read_csv('book.csv')
 cos_sim = np.load('sim.npy')
 
-title = input('>>>>')
+###########################################
+# ui
+###########################################
+# st.title('book')
+
+# title = st.text_input("책 제목을 입력해주세요")
+
+
+
+
 # title = df.loc[df['Title'].str.contains(title), 'Title']
 # print(title)
 
-ans = Recommend(title, cos_sim)
+ans = Recommend('Dramatica for Screenwriters', cos_sim)
+ans.reset_index(drop = True, inplace = True)
 
-print(ans)
+# print(ans)
+
+
+for url in ans:
+    # response = requests.get(df1.loc[a.index[i]].image)
+    # img = Image.open(BytesIO(response.content))
+    st.image(url, wigth = 100)
+
+    # fig.add_subplot(2, 5, i + 1)
+    # plt.imshow(img)
+    # plt.axis('off')
+    # plt.title(df1.loc[a.index[i]]['Title'])
