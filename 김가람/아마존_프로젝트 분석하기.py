@@ -50,7 +50,7 @@ df1 = df[:15000]
 df_title = df.Title.copy()
 df_des = df.description.copy()
 
-"""# 데이터 전처리"""
+# 데이터 전처리
 
 def NLTK_des(data):
     
@@ -62,14 +62,14 @@ def NLTK_des(data):
     stw = stopwords.words('english')   # 불용어
     stw.extend(["'s", "’", "’", "''", "``", "--"])    # 불용어 + punctuation에 없는 특수문자들
 
-    des_token = []
+    des_token = [] # 토근화한 후 des_token에 추가하기
 
     for i in range(len(data)):
         result = []
         for w in word_tokenize(data[i]):
-            if ((w not in stw) and (w not in punctuation)):
-                result.append(w)
-                tmp = " ".join(result)
+            if ((w not in stw) and (w not in punctuation)): # w가 불용어 사전에 없고, 특수문자에 없는 경우
+                result.append(w)    #result에 w를 추가
+                tmp = " ".join(result) # result를 space(띄어쓰기)를 기준으로 합쳐서 des_token에 추가해줌
         des_token.append(tmp)
 
     return pd.Series(des_token)
@@ -77,18 +77,19 @@ def NLTK_des(data):
 
 NLTK_des(df_des)
 
-NLTK_des1 = NLTK_des(df_des).head(15000).copy()
+NLTK_des1 = NLTK_des(df_des).head(15000).copy() #NLTK_des 데이터의 150000개 데이터만 추려서 깊은 복사
 
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.feature_extraction.text import TfidfVectorizer
+# from sklearn.feature_extraction.text import CountVectorizer ---> countvectorizer를 통해 벡터화 하려고 했으나 
+
+from sklearn.feature_extraction.text import TfidfVectorizer #tf-idf 방법으로 실행하여 성공하였음
 from sklearn.metrics.pairwise import cosine_similarity
 
 tf_vec = TfidfVectorizer()
 
-tf_vec_matrix = tf_vec.fit_transform(NLTK_des1)
+tf_vec_matrix = tf_vec.fit_transform(NLTK_des1) #NLTK_des1을 벡터화
 print(tf_vec_matrix.shape)
 
-# 유사도 형태
+# 유사도 형태(상관관계)
 cosine_sim = cosine_similarity(tf_vec_matrix, tf_vec_matrix)
 cosine_sim.shape
 
