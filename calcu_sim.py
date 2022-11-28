@@ -7,7 +7,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 df = pd.read_csv('book.csv')
 
 # 제 컴퓨터로는 데이터 개수를 줄여야 돌아갑니다...
-df1 = df.head(5000)
+df1 = df.head(3000)
 
 description = df1['description']
 

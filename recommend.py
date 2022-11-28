@@ -21,16 +21,16 @@ def Recommend(title, cos_sim):
     rec_idx = [idx[0] for idx in sim]
 
     # 유사도 탑10 제목 가져오기
-    print(sim)                       # (인덱스, 유사도)
-    return df['Title'].iloc[rec_idx]
+    # print(sim)                       # (인덱스, 유사도)
+    return df['image'].iloc[rec_idx]
 
 df = pd.read_csv('book.csv')
 cos_sim = np.load('sim.npy')
 
 title = input('>>>>')
-title = df.loc[df['Title'].str.contains(title), 'Title']
-print(title)
+# title = df.loc[df['Title'].str.contains(title), 'Title']
+# print(title)
 
-# ans = Recommend('Dramatica for Screenwriters', cos_sim)
+ans = Recommend(title, cos_sim)
 
-# print(ans)
+print(ans)
