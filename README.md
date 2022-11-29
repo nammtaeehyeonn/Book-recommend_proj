@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
   <img src="https://img.shields.io/badge/linux-FCC624?style=for-the-badge&logo=linux&logoColor=black">
   <img src="https://img.shields.io/badge/Visual Studio Code-007ACC?style=for-the-badge&logo=Visual Studio Code&logoColor=white">
-  <img src="https://img.shields.io/badge/Amazon-FF9900?style=for-the-badgelogo=Amazon&logoColor=white">
+  <img src="https://img.shields.io/badge/Amazon-FF9900?style=for-the-badge&logo=Amazon&logoColor=white">
   <img src="https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"> 
   <img src="https://img.shields.io/badge/slack-4A154B?style=for-the-badge&logo=Slack&logoColor=white"> 
   <br>
@@ -18,7 +18,7 @@
 <div align=center><h3> 🧑기간: 2022.11월 25일(금) ~ 2022.11.28(월)</h3></div>
 <br>
 
-<h3> 🌦미니 프로젝트 진행 시 역할 분담에 대한 고민 </h3>
+<h3> 🌦미니 프로젝트 진행의 역할 분담에 대한 고민 </h3>
 
 **🌧고민**: 
 
