@@ -122,5 +122,5 @@
      
    **결국 우리는, 📍**
       
-     [프로젝트 Stremlit 구현](https://nammtaeehyeonn-reco-recommend-utwo4b.streamlit.app/)
+   [도서 제목 유사도 기반 추천 모델 - Stremlit 구현](https://nammtaeehyeonn-reco-recommend-utwo4b.streamlit.app/)
        
