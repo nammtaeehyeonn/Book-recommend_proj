@@ -11,9 +11,9 @@
   </div>
   <br>
   
-<div align=center><h1> 💻구리 Playdata 빅데이터 분석과정💻</h1></div>
-<div align=right><h1> Mini-Project  : 머신러닝, 딥러닝 분석기법을 활용한 데이터 분석 및 시각화</h1></div>
-<div align=right><h1>🧑5️조: 최준열, 남태현, 김가람, 이승민</h1></div>
+<div align=center><h1> 💻구리 Playdata 빅데이터 분석과정💻 </h1></div>
+<div align=right><h1> Mini-Project  : 머신러닝, 딥러닝 분석기법을 활용한 데이터 분석 및 시각화 </h1></div>
+<div align=right><h1> 🧑5️조: 최준열, 남태현, 김가람, 이승민</h1></div>
 
 #### 미니 프로젝트 진행에 대한 고민
 
