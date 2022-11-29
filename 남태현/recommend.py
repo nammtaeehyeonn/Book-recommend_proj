@@ -34,7 +34,7 @@ st.title('독서는 마음의 양식')
 
 title = st.text_input("책 제목을 입력해주세요")
 
-st.write(ex)
+st.write(ex.values())
 
 if title:
     ans = Recommend(title, cos_sim)
