@@ -12,7 +12,7 @@
   </div>
   <br>
   
-<div align=center><h1> 💻구리 Playdata 빅데이터 분석과정💻 </h1></div>
+<div align=center><h1> 💻구로 Playdata 빅데이터 분석과정💻 </h1></div>
 <div align=center><h2> Mini-Project  : 머신러닝, 딥러닝 분석기법을 활용한 데이터 분석 및 시각화 </h2></div>
 <div align=center><h3> 🧑5️조: 최준열, 남태현, 김가람, 이승민</h3></div>
 <div align=center><h3> 🧑기간: 2022.11월 25일(금) ~ 2022.11.28(월)</h3></div>
