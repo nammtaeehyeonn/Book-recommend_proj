@@ -122,5 +122,5 @@
      
    **결국 우리는, 📍**
       
-      https://nammtaeehyeonn-reco-recommend-utwo4b.streamlit.app/
+     [프로젝트 Stremlit 구현](https://nammtaeehyeonn-reco-recommend-utwo4b.streamlit.app/)
        
