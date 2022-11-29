@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=slice&color=auto&height=200&section=header&text=Mini-Project2&textBg=false&fontSize=70&fontAlign=70&fontAlignY=35&rotate=13&desc=-%20자연어%20기반%20연관도서%20추천&descSize=22&descAlign=60)
+![header](https://capsule-render.vercel.app/api?type=slice&color=auto&height=200&section=header&text=Mini-Project2&textBg=false&fontSize=70&fontAlign=70&fontAlignY=35&rotate=13&desc=-%20자연어%20기반%20연관도서%20추천&descSize=20&descAlign=70)
 
 <div align=right><h1>📚 STACKS</h1></div>
 <div align=right> 
